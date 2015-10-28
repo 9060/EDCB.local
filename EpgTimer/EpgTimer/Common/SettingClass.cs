@@ -245,6 +245,8 @@ namespace EpgTimer
         private bool minHide;
         private bool mouseScrollAuto;
         private int noStyle;
+        private double reserveMinHeight;
+        private bool reservePopup;
 
         public bool UseCustomEpgView
         {
@@ -971,8 +973,17 @@ namespace EpgTimer
             get { return noStyle; }
             set { noStyle = value; }
         }
-        
-        
+        public double ReserveMinHeight
+        {
+            get { return reserveMinHeight; }
+            set { reserveMinHeight = value; }
+        }
+        public bool ReservePopup
+        {
+            get { return reservePopup; }
+            set { reservePopup = value; }
+        }
+
         public Settings()
         {
             useCustomEpgView = false;
@@ -1103,6 +1114,8 @@ namespace EpgTimer
             minHide = true;
             mouseScrollAuto = false;
             noStyle = 0;
+            reserveMinHeight = 2;
+            reservePopup = false;
         }
 
         [NonSerialized()]
