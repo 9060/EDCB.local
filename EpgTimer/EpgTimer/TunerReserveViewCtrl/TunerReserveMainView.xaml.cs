@@ -663,7 +663,7 @@ namespace EpgTimer
                         //    duration = (int)Settings.Instance.MinHeight;
                         //}
 
-                        viewItem.Height = Math.Floor((duration / 60) * Settings.Instance.MinHeight);
+                        viewItem.Height = Math.Floor((duration / 60) * Settings.Instance.ReserveMinHeight);
                         if (viewItem.Height == 0)
                         {
                             viewItem.Height = Settings.Instance.MinHeight;
@@ -750,7 +750,7 @@ namespace EpgTimer
                     int index = timeList.BinarySearch(chkStartTime);
                     if (index >= 0)
                     {
-                        item.TopPos = (index * 60 + (startTime - chkStartTime).TotalMinutes) * Settings.Instance.MinHeight;
+                        item.TopPos = (index * 60 + (startTime - chkStartTime).TotalMinutes) * Settings.Instance.ReserveMinHeight;
                     }
                 }
 
@@ -758,7 +758,7 @@ namespace EpgTimer
                 tunerReserveNameView.SetTunerInfo(tunerList);
                 tunerReserveView.SetReserveList(reserveList,
                     leftPos,
-                    timeList.Count * 60 * Settings.Instance.MinHeight);
+                    timeList.Count * 60 * Settings.Instance.ReserveMinHeight);
             }
             catch (Exception ex)
             {
