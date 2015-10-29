@@ -447,10 +447,10 @@ namespace EpgTimer.TunerReserveViewCtrl
             ReserveItem reserveItem = new ReserveItem(info.ReserveInfo);
             popupItem.Background = reserveItem.BackColor;
 
-            Canvas.SetTop(popupItem, info.TopPos);
-            popupItem.MinHeight = info.Height;
-            Canvas.SetLeft(popupItem, info.LeftPos);
-            popupItem.Width = info.Width;
+            Canvas.SetTop(popupItem, Math.Floor(info.TopPos));
+            popupItem.MinHeight = Math.Ceiling(info.Height);
+            Canvas.SetLeft(popupItem, Math.Floor(info.LeftPos));
+            popupItem.Width = Math.Ceiling(info.Width);
 
             String text;
             DateTime endTime = info.ReserveInfo.StartTime + TimeSpan.FromSeconds(info.ReserveInfo.DurationSecond);
