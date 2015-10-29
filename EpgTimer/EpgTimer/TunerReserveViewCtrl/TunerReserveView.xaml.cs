@@ -463,8 +463,6 @@ namespace EpgTimer.TunerReserveViewCtrl
             minText.Foreground = CommonManager.Instance.CustTitle1Color;
             minText.Margin = new Thickness(1, 1, 1, 1);
 
-            //minGrid.Width = new GridLength(sizeNormal * 1.7 + 1);
-
             double indent = Settings.Instance.EpgTitleIndent ? sizeNormal * 2 : 2;
             text = reserveItem.ServiceName;
             text += " (" + reserveItem.NetworkName + ")";

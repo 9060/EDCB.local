@@ -19,7 +19,7 @@
             <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         </Style>
     </UserControl.Resources>
-    <!-- Grid -->
+    <Grid>
         <ScrollViewer Name="scrollViewer" HorizontalScrollBarVisibility="Visible" ScrollChanged="scrollViewer_ScrollChanged">
         <Canvas Name="canvas" HorizontalAlignment="Left" VerticalAlignment="Top">
             <local:TunerReservePanel x:Name="reserveViewPanel" Background="DarkGray" MouseMove="reserveViewPanel_MouseMove" MouseLeftButtonDown="reserveViewPanel_MouseLeftButtonDown" MouseLeftButtonUp="reserveViewPanel_MouseLeftButtonUp" HorizontalAlignment="Left" VerticalAlignment="Top" MouseRightButtonDown="reserveViewPanel_MouseRightButtonDown" MouseLeave="reserveViewPanel_MouseLeave"/>
@@ -35,5 +35,5 @@
             </Border>
         </Canvas>
         </ScrollViewer>
-    <!-- /Grid -->
+    </Grid>
 </UserControl>
