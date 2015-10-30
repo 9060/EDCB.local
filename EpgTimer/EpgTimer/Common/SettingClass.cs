@@ -247,6 +247,7 @@ namespace EpgTimer
         private int noStyle;
         private double reserveMinHeight;
         private bool reservePopup;
+        private bool alwaysSaveEpgSetting;
 
         public bool UseCustomEpgView
         {
@@ -983,6 +984,11 @@ namespace EpgTimer
             get { return reservePopup; }
             set { reservePopup = value; }
         }
+        public bool AlwaysSaveEpgSetting
+        {
+            get { return alwaysSaveEpgSetting; }
+            set { alwaysSaveEpgSetting = value; }
+        }
 
         public Settings()
         {
@@ -1116,6 +1122,7 @@ namespace EpgTimer
             noStyle = 0;
             reserveMinHeight = 2;
             reservePopup = false;
+            alwaysSaveEpgSetting = false;
         }
 
         [NonSerialized()]
