@@ -82,7 +82,7 @@
                         <Grid>
                             <CheckBox Content="番組内容をポップアップ表示する" Height="16" HorizontalAlignment="Left" Margin="11,12,0,0" Name="checkBox_reserve_popup" VerticalAlignment="Top" />
                             <Label Content="1分あたりの高さ" Height="28" HorizontalAlignment="Left" Margin="327,7,0,0" VerticalAlignment="Top" />
-                            <TextBox Height="24" HorizontalAlignment="Left" Margin="470,7,0,0" Name="textBox_reserve_minHeight" VerticalAlignment="Top" Width="55" />
+                            <TextBox Height="24" HorizontalAlignment="Left" Margin="470,9,0,0" Name="textBox_reserve_minHeight" VerticalAlignment="Top" Width="55" />
                         </Grid>
                     </GroupBox>
                 </Grid>
